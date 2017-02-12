@@ -21,6 +21,8 @@
 		CAD90E391E51096500927588 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD90E311E51096500927588 /* Image+CoreDataProperties.swift */; };
 		CAD90E3A1E51096500927588 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD90E321E51096500927588 /* Store+CoreDataClass.swift */; };
 		CAD90E3B1E51096500927588 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD90E331E51096500927588 /* Store+CoreDataProperties.swift */; };
+		CAD90E401E511B8600927588 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD90E3F1E511B8600927588 /* MaterialView.swift */; };
+		CAD90E421E51229900927588 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD90E411E51229900927588 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		CAD90E311E51096500927588 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CAD90E321E51096500927588 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataClass.swift"; path = "../Store+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CAD90E331E51096500927588 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataProperties.swift"; path = "../Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CAD90E3F1E511B8600927588 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		CAD90E411E51229900927588 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		CAB933471E50CAB00081C42B /* Using Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				CAD90E3E1E511B6F00927588 /* View */,
 				CAD90E3C1E510A1800927588 /* Model */,
 				CAB933481E50CAB00081C42B /* AppDelegate.swift */,
 				CAB9334A1E50CAB00081C42B /* ViewController.swift */,
@@ -105,6 +110,15 @@
 				CAD90E331E51096500927588 /* Store+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		CAD90E3E1E511B6F00927588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAD90E3F1E511B8600927588 /* MaterialView.swift */,
+				CAD90E411E51229900927588 /* ItemCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +196,10 @@
 				CAD90E391E51096500927588 /* Image+CoreDataProperties.swift in Sources */,
 				CAD90E361E51096500927588 /* ItemType+CoreDataClass.swift in Sources */,
 				CAB9334B1E50CAB00081C42B /* ViewController.swift in Sources */,
+				CAD90E401E511B8600927588 /* MaterialView.swift in Sources */,
 				CAB933491E50CAB00081C42B /* AppDelegate.swift in Sources */,
 				CAD90E3B1E51096500927588 /* Store+CoreDataProperties.swift in Sources */,
+				CAD90E421E51229900927588 /* ItemCell.swift in Sources */,
 				CAD90E381E51096500927588 /* Image+CoreDataClass.swift in Sources */,
 				CAD90E341E51096500927588 /* Item+CoreDataClass.swift in Sources */,
 				CAB933511E50CAB00081C42B /* Using_Core_Data.xcdatamodeld in Sources */,
