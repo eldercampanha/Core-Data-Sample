@@ -8,14 +8,35 @@
 
 import UIKit
 
-class MaterialView: UIView {
+private var materialKey = false
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+extension UIView {
+    
+    @IBInspectable var materialDesign : Bool {
+     
+        get {
+            return materialKey
+        }
+        
+        set {
+            materialKey = newValue
+            
+            if materialKey {
+
+                self.layer.masksToBounds = false
+                self.layer.cornerRadius = 3.0
+                self.layer.shadowOpacity = 0.8
+                self.layer.cornerRadius = 3.0
+                self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+                self.layer.shadowColor = UIColor.red.cgColor
+            }
+            else {
+                
+                self.layer.shadowOpacity = 0.8
+                self.layer.cornerRadius = 3.0
+                self.layer.shadowColor = nil
+            }
+        }
+        
     }
-    */
-
 }
