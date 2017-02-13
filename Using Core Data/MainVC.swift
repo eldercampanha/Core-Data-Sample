@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  Using Core Data
 //
 //  Created by um tera on 2/12/17.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -54,9 +54,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 150
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -71,6 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // update cell
         let item = controller.object(at: indexPah as IndexPath)
         cell.configureCell(newItem: item)
+        cell.sizeToFit()
         
     }
     
@@ -153,7 +154,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func generateFakeData(){
 
         if controller.sections?.count.toIntMax() == 0 {
-         
+        
             let item = Item(context: context)
             item.title = "MacBook Pro"
             item.price = 1800

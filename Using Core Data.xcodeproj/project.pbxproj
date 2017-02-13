@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D04573D1E52334C00E9D956 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D04573C1E52334C00E9D956 /* CustomTextField.swift */; };
+		7D738E871E522F3F00789886 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D738E851E522F3F00789886 /* ItemDetailsVC.swift */; };
 		CAB933491E50CAB00081C42B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB933481E50CAB00081C42B /* AppDelegate.swift */; };
-		CAB9334B1E50CAB00081C42B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9334A1E50CAB00081C42B /* ViewController.swift */; };
+		CAB9334B1E50CAB00081C42B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9334A1E50CAB00081C42B /* MainVC.swift */; };
 		CAB9334E1E50CAB00081C42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB9334C1E50CAB00081C42B /* Main.storyboard */; };
 		CAB933511E50CAB00081C42B /* Using_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAB9334F1E50CAB00081C42B /* Using_Core_Data.xcdatamodeld */; };
 		CAB933531E50CAB00081C42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB933521E50CAB00081C42B /* Assets.xcassets */; };
@@ -26,9 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D04573C1E52334C00E9D956 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7D738E851E522F3F00789886 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		CAB933451E50CAB00081C42B /* Using Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Using Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB933481E50CAB00081C42B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAB9334A1E50CAB00081C42B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAB9334A1E50CAB00081C42B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CAB9334D1E50CAB00081C42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAB933501E50CAB00081C42B /* Using_Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Using_Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		CAB933521E50CAB00081C42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D738E841E522EF100789886 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9334A1E50CAB00081C42B /* MainVC.swift */,
+				7D738E851E522F3F00789886 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		CAB9333C1E50CAAF0081C42B = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +89,10 @@
 		CAB933471E50CAB00081C42B /* Using Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				7D738E841E522EF100789886 /* Controller */,
 				CAD90E3E1E511B6F00927588 /* View */,
 				CAD90E3C1E510A1800927588 /* Model */,
 				CAB933481E50CAB00081C42B /* AppDelegate.swift */,
-				CAB9334A1E50CAB00081C42B /* ViewController.swift */,
 				CAB9334C1E50CAB00081C42B /* Main.storyboard */,
 				CAB933521E50CAB00081C42B /* Assets.xcassets */,
 				CAB933541E50CAB00081C42B /* LaunchScreen.storyboard */,
@@ -117,6 +130,7 @@
 			children = (
 				CAD90E3F1E511B8600927588 /* MaterialView.swift */,
 				CAD90E411E51229900927588 /* ItemCell.swift */,
+				7D04573C1E52334C00E9D956 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,17 +209,19 @@
 			files = (
 				CAD90E391E51096500927588 /* Image+CoreDataProperties.swift in Sources */,
 				CAD90E361E51096500927588 /* ItemType+CoreDataClass.swift in Sources */,
-				CAB9334B1E50CAB00081C42B /* ViewController.swift in Sources */,
+				CAB9334B1E50CAB00081C42B /* MainVC.swift in Sources */,
 				CAD90E401E511B8600927588 /* MaterialView.swift in Sources */,
 				CAB933491E50CAB00081C42B /* AppDelegate.swift in Sources */,
 				CAD90E3B1E51096500927588 /* Store+CoreDataProperties.swift in Sources */,
 				CAD90E421E51229900927588 /* ItemCell.swift in Sources */,
 				CAD90E381E51096500927588 /* Image+CoreDataClass.swift in Sources */,
+				7D738E871E522F3F00789886 /* ItemDetailsVC.swift in Sources */,
 				CAD90E341E51096500927588 /* Item+CoreDataClass.swift in Sources */,
 				CAB933511E50CAB00081C42B /* Using_Core_Data.xcdatamodeld in Sources */,
 				CAD90E3A1E51096500927588 /* Store+CoreDataClass.swift in Sources */,
 				CAD90E371E51096500927588 /* ItemType+CoreDataProperties.swift in Sources */,
 				CAD90E351E51096500927588 /* Item+CoreDataProperties.swift in Sources */,
+				7D04573D1E52334C00E9D956 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

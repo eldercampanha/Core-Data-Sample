@@ -19,23 +19,23 @@ extension UIView {
         }
         
         set {
-            materialKey = newValue
             
-            if materialKey {
+            guard materialKey == newValue, materialDesign == true else {
 
-                self.layer.masksToBounds = false
-                self.layer.cornerRadius = 3.0
-                self.layer.shadowOpacity = 0.8
-                self.layer.cornerRadius = 3.0
-                self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-                self.layer.shadowColor = UIColor.red.cgColor
-            }
-            else {
-                
                 self.layer.shadowOpacity = 0.8
                 self.layer.cornerRadius = 3.0
                 self.layer.shadowColor = nil
+                
+                return                
             }
+
+            self.layer.masksToBounds = false
+            self.layer.cornerRadius = 3.0
+            self.layer.shadowOpacity = 0.8
+            self.layer.cornerRadius = 3.0
+            self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            self.layer.shadowColor = UIColor.red.cgColor
+
         }
         
     }
