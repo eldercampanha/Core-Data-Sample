@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         attemptFetch()
         generateFakeData()
-        			
+        
     }
 
     override func didReceiveMemoryWarning() {
