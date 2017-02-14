@@ -22,5 +22,6 @@ class ItemCell: UITableViewCell {
         details.text = newItem.details
         
         details.sizeToFit()
+        wraperView.sizeToFit()	
     }
 }
